@@ -1,0 +1,12 @@
+{
+  "name": "@transquant/utils",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "foolishmax <827864735@qq.com>",
+  "homepage": "",
+  "license": "MIT",
+  "main": "index.ts",
+  "dependencies": {
+    "axios": "^0.24.0"
+  }
+}

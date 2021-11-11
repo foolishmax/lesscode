@@ -1,0 +1,35 @@
+{
+  "name": "builder",
+  "private": true,
+  "scripts": {
+    "postinstall": "is-ci || husky install",
+    "clean": "lerna clean",
+    "bootstrap": "lerna bootstrap",
+    "docz:dev": "lerna run --parallel docz:dev",
+    "start": "lerna run --parallel start",
+    "build": "lerna run --parallel build",
+    "analyzer": "lerna run --parallel analyzer",
+    "lint": "builder-scripts lint"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "husky": "^5.0.4",
+    "lerna": "^3.22.1"
+  },
+  "workspaces": [
+    "packages/*",
+    "src/*"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

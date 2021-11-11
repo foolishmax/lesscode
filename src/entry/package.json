@@ -1,0 +1,19 @@
+{
+  "name": "@transquant/entry",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "foolishmax <827864735@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "cross-env NODE_OPTIONS=--max_old_space_size=8192 & builder-scripts start",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 & builder-scripts build",
+    "analyzer": "builder-scripts build --analyzer"
+  },
+  "dependencies": {
+    "@transquant/home": "^1.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "main": "index.js"
+}
