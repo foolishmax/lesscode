@@ -1,19 +1,25 @@
 {
-  "name": "@transquant/entry",
+  "name": "@lesscode/entry",
   "version": "1.0.0",
   "description": "> TODO: description",
   "author": "foolishmax <827864735@qq.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "cross-env NODE_OPTIONS=--max_old_space_size=8192 & builder-scripts start",
-    "build": "cross-env NODE_OPTIONS=--max_old_space_size=8192 & builder-scripts build",
+    "start": "cross-env NODE_OPTIONS=--max_old_space_size=4096 & builder-scripts start",
+    "build": "cross-env NODE_OPTIONS=--max_old_space_size=4096 & builder-scripts build",
     "analyzer": "builder-scripts build --analyzer"
   },
   "dependencies": {
-    "@transquant/home": "^1.0.0",
+    "@babel/plugin-proposal-decorators": "^7.16.0",
+    "@lesscode/home": "^1.0.0",
+    "@types/react": "^17.0.34",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router-dom": "^5.3.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0"
   },
   "main": "index.js"
 }

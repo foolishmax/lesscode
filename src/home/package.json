@@ -1,14 +1,17 @@
 {
-  "name": "@transquant/home",
+  "name": "@lesscode/home",
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
   "main": "index.tsx",
   "dependencies": {
-    "@transquant/utils": "^1.0.0",
-    "monaco-editor": "^0.30.0",
+    "@babel/plugin-proposal-decorators": "^7.16.0",
+    "@lesscode/utils": "^1.0.0",
+    "antd": "^4.8.5",
+    "classnames": "^2.2.6",
+    "mobx": "^4.15.7",
+    "mobx-react": "^6.3.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-monaco-editor": "^0.46.0"
+    "react-dom": "^17.0.2"
   }
 }
